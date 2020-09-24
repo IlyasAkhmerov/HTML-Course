@@ -4,44 +4,73 @@
     <meta charset="utf-8" />
     <title>Анкета кандидата на курс frontend-разработки Ахмерова И.Р.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"/>
-    <link rel="stylesheet" href="font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            margin: 100px;
+            width: 1700px;
+            margin: auto;
         }
         small {
             font-size: .65em;
+        }
+        .center {
+            width: 100%;
+            text-align: center;
+        }
+        .left {
+            float: left;
+            width: 300px;
+        }
+        table {
+            width: 100%;
+        }
+        tr {
+            height: 35px;
+        }
+        table.tableone td {
+            height: 30px;
+            width: 50%;
+        }
+        table.tabletwo {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table.tabletwo th {
+            width: 10px;
+            border: 1px solid black;
+        }
+        table.tabletwo td {
+            height: 60px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 <header>
-    <div align="center">
-        <h1>
-            Анкета кандидата на курс <br/>
-            <small>по frontend-разработке</small>
-        </h1>
+    <div>
+        <h1 class="center">Анкета кандидата на курс по frontend-разработке</h1>
     </div>
 </header>
 <main>
     <div style="overflow: hidden;">
         <div style="width: 1000%;">
-            <div style="float: left; width: 400px; height: 1000px; background-color: aliceblue; padding: 30px">
-                <div align="center">
-                    <img src="My photo.jpg" width="120px" alt=""/> <br>
+            <div style="float: left; width: 400px; height: 1020px; background-color: aliceblue; padding: 30px">
+                <div class="center">
+                    <img src="MyPhoto.jpg" width="120" alt="/"> <br>
                 </div>
-                <h1 align="center">Ильяс Ахмеров</h1>
+                <h1 class="center">Ильяс Ахмеров</h1>
                 <p>Дата рождения: 22.02.1982 г. (38 лет)</p>
                 <p>Должность: тестировщик</p>
                 <h3>Контакты:</h3>
-                <div align="left">
+                <div>
                     <address>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> РМ, г.Рузаевка<br />
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> РМ, г.Рузаевка<br/>
                         <i class="fa fa-mobile" aria-hidden="true"></i> +7(927)274-74-92 <br/>
-                        <i class="fa fa-vk" aria-hidden="true"> <a href="https://vk.com/ahil_yes">vk.com</a> </i><br/>
-                        <i class="fa fa-instagram" aria-hidden="true"> <a href="https://www.instagram.com/akhmerovilias/">instagram</a> </i><br/>
-
-                    </address>
+                        <i class="fa fa-vk" aria-hidden="true"> <a href="https://vk.com/ahil_yes">vk.com</a></i><br/>
+                        <i class="fa fa-instagram" aria-hidden="true"> <a href="https://www.instagram.com/akhmerovilias/">instagram</a></i><br/>
+                    </address><br/>
                 </div>
                 <h3>Знания языков:</h3>
                 <p>Немецкий: базовый уровень</p>
@@ -65,15 +94,15 @@
                 <p>Трудолюбие, внимательность к мелочам, усидчивость, целеустремленность,
                     умение работать в команде, нацеленность на результат.</p>
             </div>
-            <div style="float: left; width: 1200px; height: 1000px; padding: 30px">
-                <h2 align="left">Образование:</h2>
-                <table width="100%" border="0">
+            <div style="float: left; width: 1200px; height: 1000px; padding: 5px 30px">
+                <h2>Образование:</h2>
+                <table class="tableone">
                     <tr>
-                        <th width="600px" height="30px" align="left">Высшее:</th>
-                        <td>МГУ им.Н.П.Огарёва</abbr></td>
+                        <td><strong>Высшее:</strong></td>
+                        <td>МГУ им.Н.П.Огарёва</td>
                     </tr>
                     <tr>
-                        <th width="600px" height="30px" align="left">Факультет:</th>
+                        <td><strong>Факультет:</strong></td>
                         <td>
                             <abbr title="Рузаевский Институт Машиностроения">
                             <a href="http://rim.mrsu.ru/">РИМ</a>
@@ -81,39 +110,39 @@
                         </td>
                     </tr>
                     <tr>
-                        <th width="600px" height="30px" align="left">Специальность:</th>
+                        <td><strong>Специальность:</strong></td>
                         <td>Экономика и управление на предприятии машиностроения</td>
                     </tr>
                     <tr>
-                        <th align="left" height="30px">Год окончания:</th>
+                        <td><strong>Год окончания:</strong></td>
                         <td>1999</td>
                     </tr>
                 </table>
-                <h2 align="left">Курсы:</h2>
-                <table width="100%" border="0">
+                <h2 class="left">Курсы:</h2>
+                <table class="tableone">
                     <tr>
-                        <th width="600px" height="30px" align="left">Название:</th>
+                        <td><strong>Название:</strong></td>
                         <td>Тестирование программного обеспечения</td>
                     </tr>
                     <tr>
-                        <th width="600px" height="30px" align="left">Организация:</th>
+                        <td><strong>Организация:</strong></td>
                         <td>Codemasters International</td>
                     </tr>
                     <tr>
-                        <th align="left" height="30px">Год окончания:</th>
+                        <td><strong>Год окончания:</strong></td>
                         <td>2020</td>
                     </tr>
                 </table>
-                <h2>Опыт работы:</h2>
-                <table width="100%" border="1" cellpadding="13px">
+                <h2 class="left">Опыт работы:</h2>
+                <table class="tabletwo">
                     <tr>
-                        <th >Дата</th>
+                        <th>Дата</th>
                         <th>Компания</th>
                         <th>Должность</th>
-                        <th width="600">Обязанности</th>
+                        <th>Обязанности</th>
                     </tr>
                     <tr>
-                        <td>14.05.2020 г. – по наст. время</th>
+                        <td>14.05.2020 г. – по наст. время</td>
                         <td>ООО "Агентство интернет маркетинга "Трувизибилити""</td>
                         <td>Тестировщик</td>
                         <td>Тестирование и повышение качества продукта, локализация и документирование
@@ -121,7 +150,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>01.06.2017 г. – 30.09.2019 г.</th>
+                        <td>01.06.2017 г. – 30.09.2019 г.</td>
                         <td>ФГБУ «ЦЖКУ»</td>
                         <td>Мастер КЖФ</td>
                         <td>Содержание и текущий ремонт казарменно-жилищного фонда МО РФ,
@@ -130,7 +159,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>24.04.2016 г. – 31.05.2017 г.</th>
+                        <td>24.04.2016 г. – 31.05.2017 г.</td>
                         <td>ООО «Компонент»</td>
                         <td>Мастер КЖФ</td>
                         <td>Содержание и текущий ремонт казарменно-жилищного фонда МО РФ,
@@ -139,7 +168,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>16.02.2011 г. – 30.10.2015 г.</th>
+                        <td>16.02.2011 г. – 30.10.2015 г.</td>
                         <td>ОАО «Славянка»</td>
                         <td>Заместитель начальника РЭУ</td>
                         <td>Содержание и текущий ремонт казарменно-жилищного фонда МО РФ,
@@ -148,7 +177,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>09.09.2010 г. – 16.02.2011 г.</th>
+                        <td>09.09.2010 г. – 16.02.2011 г.</td>
                         <td>ОАО «Славянка»</td>
                         <td>Начальник ЖЭУ</td>
                         <td>Содержание и текущий ремонт многоквартирных домов,
@@ -157,13 +186,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>11.01.2010 г. – 08.09.2010 г.</th>
+                        <td>11.01.2010 г. – 08.09.2010 г.</td>
                         <td>ФГКУ «1340 ЦОМТИ»</td>
                         <td>Экономист</td>
                         <td>Учет товарно-материальных ценностей</td>
                     </tr>
                     <tr>
-                        <td>02.08.2006 г. – 31.12.2009 г</th>
+                        <td>02.08.2006 г. – 31.12.2009 г</td>
                         <td>Санаторно-курортный комплекс «Надежда»</td>
                         <td>Главный бухгалтер</td>
                         <td>Ведение бухгалтерского и налогового учета,
@@ -175,6 +204,7 @@
         </div>
     </div>
 </main>
-
+</body>
+</html>
 
 
